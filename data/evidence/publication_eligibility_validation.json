@@ -1,0 +1,57 @@
+{
+  "source_panel_path": "data/processed/publication_market_ohlcv/exchange=ASX/asx200_point_in_time_panel.parquet",
+  "timing_convention": "next_session_after_close",
+  "timing_note": "Eligibility is evaluated on the signal date and is intended to govern next-session execution, matching backtests that apply positions with a one-day lag.",
+  "identity_convention": "asset_id",
+  "membership_convention": "member_of_universe",
+  "min_history_220": {
+    "timing_convention": "next_session_after_close",
+    "timing_note": "Eligibility is evaluated on the signal date and is intended to govern next-session execution, matching backtests that apply positions with a one-day lag.",
+    "identity_convention": "asset_id",
+    "membership_convention": "member_of_universe",
+    "min_history": 220,
+    "row_count": 2462415,
+    "asset_count": 718,
+    "eligible_asset_date_rows": 1268056,
+    "member_insufficient_history_rows": 64226,
+    "eligible_asset_count": 682,
+    "first_eligible_date_summary": {
+      "asset_count": 682,
+      "earliest": "2001-02-13",
+      "median": "2006-11-16",
+      "latest": "2026-07-09"
+    },
+    "assets_eligible_immediately_on_first_membership": 348,
+    "assets_requiring_additional_history_after_first_membership": 370,
+    "membership_entry_transitions": 839,
+    "membership_exit_transitions": 482,
+    "assets_with_reentry": 104,
+    "total_reentries": 121,
+    "max_reentries_per_asset": 4
+  },
+  "min_history_60": {
+    "timing_convention": "next_session_after_close",
+    "timing_note": "Eligibility is evaluated on the signal date and is intended to govern next-session execution, matching backtests that apply positions with a one-day lag.",
+    "identity_convention": "asset_id",
+    "membership_convention": "member_of_universe",
+    "min_history": 60,
+    "row_count": 2462415,
+    "asset_count": 718,
+    "eligible_asset_date_rows": 1317625,
+    "member_insufficient_history_rows": 14657,
+    "eligible_asset_count": 704,
+    "first_eligible_date_summary": {
+      "asset_count": 704,
+      "earliest": "2000-06-28",
+      "median": "2006-06-19",
+      "latest": "2026-07-09"
+    },
+    "assets_eligible_immediately_on_first_membership": 436,
+    "assets_requiring_additional_history_after_first_membership": 282,
+    "membership_entry_transitions": 839,
+    "membership_exit_transitions": 482,
+    "assets_with_reentry": 104,
+    "total_reentries": 121,
+    "max_reentries_per_asset": 4
+  }
+}
