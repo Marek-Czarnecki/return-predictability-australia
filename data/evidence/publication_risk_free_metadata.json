@@ -1,0 +1,17 @@
+{
+  "calendar_end": "2026-08-27T00:00:00",
+  "calendar_start": "2000-03-31T00:00:00",
+  "construction": "target_rate_percent / 365 compounded over actual calendar-day gaps",
+  "existing_tri_overlap": {
+    "max_abs_return_difference": 0.0005206495678329315,
+    "mean_abs_return_difference": 8.28668832883284e-07,
+    "overlap_count": 3942.0
+  },
+  "first_return_policy": "zero_only_on_first_output_observation",
+  "parameter_selection_affected": false,
+  "row_count": 6683,
+  "source": "Reserve Bank of Australia cash rate target history",
+  "source_url": "https://www.rba.gov.au/statistics/tables/csv/f1-data.csv",
+  "strategy_returns_affected": false,
+  "use": "Sharpe and risk-adjusted publication metrics only"
+}
