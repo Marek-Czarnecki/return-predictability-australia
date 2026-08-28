@@ -1,0 +1,17 @@
+{
+  "artifact_count": 40,
+  "manifest_hash_algorithm": "sha256",
+  "multiple_testing_method": "holm",
+  "primary_hypothesis_count": 4,
+  "reject_count_after_holm_0_05": 0,
+  "risk_free_coverage_status": "complete",
+  "scope_note": "Freezes the Step 8 publication_results evidence set only. Later Step 12 may freeze the final publication evidence after corrected-vs-frozen comparison and any approved robustness work.",
+  "status": "frozen",
+  "step": "8",
+  "step_label": "controlled_historical_reruns",
+  "tax_loss_primary_metric": "abnormal_net_return_difference",
+  "validation_check_count": 26,
+  "validation_failed_check_count": 0,
+  "validation_status": "passed",
+  "walk_forward_primary_metric": "net_excess_nav_difference"
+}
