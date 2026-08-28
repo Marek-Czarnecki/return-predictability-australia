@@ -100,6 +100,12 @@ class PublicationPairsTests(unittest.TestCase):
                 "benchmark_return": np.r_[np.nan, np.repeat(0.0001, len(dates) - 1)],
             }
         )
+        sector_map = pd.DataFrame(
+            {
+                "ticker_code": ["AAA", "BBB"],
+                "sector": ["Financials", "Financials"],
+            }
+        )
 
         result = run_publication_pairs_walk_forward(
             prices,
@@ -107,6 +113,7 @@ class PublicationPairsTests(unittest.TestCase):
             max_folds=1,
             top_liquid_tickers=2,
             top_pair_count=1,
+            sector_map=sector_map,
         )
 
         self.assertEqual(len(result.fold_table), 1)
