@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "fold_count": 24,
+  "panel_start_date": "2000-03-31",
+  "panel_end_date": "2026-08-27",
+  "min_liquidity_observations": 60,
+  "liquidity_information_set": "formation_window_only",
+  "ranking_universe": "formation_end_asx200_members",
+  "tier_refresh": "fixed_for_subsequent_evaluation_fold",
+  "fallback_tier": "lower",
+  "tier_cutoffs": {
+    "high": 0.3,
+    "medium": 0.7
+  },
+  "evaluation_identity_count_min": 317,
+  "evaluation_identity_count_median": 401.5,
+  "evaluation_identity_count_max": 458,
+  "ranked_member_count_min": 195,
+  "ranked_member_count_median": 199.0,
+  "ranked_member_count_max": 201,
+  "insufficient_history_member_count_total": 6,
+  "new_or_nonmember_evaluation_identity_count_total": 4749,
+  "assignment_reason_counts": {
+    "formation_window_rank": 4772,
+    "not_formation_end_member_conservative_lower": 4749,
+    "insufficient_history_conservative_lower": 6
+  },
+  "tier_assignment_counts": {
+    "lower": 6194,
+    "medium": 1909,
+    "high": 1424
+  }
+}
