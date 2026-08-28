@@ -1,0 +1,18 @@
+{
+  "analysis_role": "consolidated_diagnostic_attribution",
+  "attribution_statement": "The trend-result collapse is not explained by metric semantics, risk-free treatment, sample extension, or benchmark choice. Within a common Norgate design and the frozen seven-fold calendar, retrospective application of the later constituent set raises mean benchmark-relative NAV performance by 0.1531, from -0.0413 to 0.1117, directly demonstrating that retrospective-current membership is the major identified contributor. Removing transaction costs adds 0.0150 but leaves mean performance negative, so costs are a modest contributor. Yahoo-versus-Norgate security coverage remains unresolved; the evidence therefore supports a bounded attribution to the survivorship-membership mechanism rather than a claim that it fully explains every difference from the frozen capstone.",
+  "common_period_control_mean": -0.041322384896077646,
+  "confirmatory": false,
+  "frozen_capstone_commit": "349fc00b087d404ba11bb9f04e9fe8ba7ad58ed6",
+  "frozen_reconstructed_nav_difference_mean": 0.1027642854830405,
+  "full_publication_mean": 0.0008204009098994,
+  "interpretation_rule": "Treat the table as diagnostic attribution across already-locked design changes. Do not sum ablation effects as if they were independent, and do not claim that the identified survivorship-membership effect fully reconciles the frozen and publication implementations.",
+  "major_identified_contributor": "point_in_time_membership_vs_retrospective_current_membership",
+  "modest_identified_contributor": "transaction_costs",
+  "not_part_of_primary_holm_family": true,
+  "preferred_metric": "net_excess_nav_difference",
+  "sample_extension_effect_full_minus_common_period": 0.042142785805977044,
+  "step": "11.1.5",
+  "strategy_name": "trend_following",
+  "unresolved_contributor": "vendor_and_security_coverage"
+}
