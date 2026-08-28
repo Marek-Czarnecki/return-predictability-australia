@@ -1,0 +1,23 @@
+{
+  "artifact_count": 21,
+  "attribution_classification_validation_status": "passed",
+  "common_period_mean_net_excess_nav_difference": -0.041322384896077646,
+  "confirmatory": false,
+  "control_value_reconciliation_status": "passed",
+  "fold_reconciliation_status": "passed",
+  "frozen_capstone_commit": "349fc00b087d404ba11bb9f04e9fe8ba7ad58ed6",
+  "frozen_reconstructed_nav_difference_mean": 0.10276428548304055,
+  "full_publication_mean_net_excess_nav_difference": 0.0008204009098994785,
+  "major_identified_contributor": "point_in_time_membership_vs_retrospective_current_membership",
+  "manifest_hash_algorithm": "sha256",
+  "modest_identified_contributor": "transaction_costs",
+  "not_part_of_primary_holm_family": true,
+  "required_artifact_validation_status": "passed",
+  "scope_note": "Freezes the Step 11.1 trend-collapse diagnostic evidence only. It does not alter the frozen capstone, Step 8 publication evidence, Step 9 comparison evidence, or create new confirmatory hypotheses.",
+  "status": "frozen",
+  "step": "11.1.6",
+  "step9_frozen_hash_validation_status": "passed",
+  "step_label": "validate_and_freeze_step11_trend_evidence",
+  "strategy_name": "trend_following",
+  "unresolved_contributor": "vendor_and_security_coverage"
+}
