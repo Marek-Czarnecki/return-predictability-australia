@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from itertools import product
+from pathlib import Path
 
 import numpy as np
 import pandas as pd
@@ -68,6 +69,8 @@ def run_publication_pairs_walk_forward(
     top_liquid_tickers: int = 20,
     top_pair_count: int = 5,
     engle_granger_pvalue_threshold: float = 0.05,
+    sector_map: pd.DataFrame | None = None,
+    sector_map_path: Path | None = None,
 ) -> PublicationPairsWalkForwardResult:
     """Run the controlled publication pairs experiment.
 
@@ -77,6 +80,10 @@ def run_publication_pairs_walk_forward(
     before index membership. Evaluation requires both legs to be eligible on the
     signal date. Gross returns and transaction costs are normalized to one unit
     of gross capital. Borrow and financing costs are intentionally excluded.
+
+    ``sector_map`` / ``sector_map_path`` are portability inputs only. Supplying
+    either makes the sector-classification dependency explicit; omitting both
+    preserves the frozen default lookup used by ``select_pairs_in_window``.
     """
     if max_folds is not None and max_folds < 1:
         raise ValueError("max_folds must be at least 1 when supplied.")
@@ -120,6 +127,8 @@ def run_publication_pairs_walk_forward(
             formation,
             top_liquid_tickers=top_liquid_tickers,
             top_pair_count=top_pair_count,
+            sector_map=sector_map,
+            sector_map_path=sector_map_path,
             engle_granger_pvalue_threshold=engle_granger_pvalue_threshold,
             liquidity_tier_map=cost_context.liquidity_tier_map,
             identity_col="asset_id",
