@@ -58,6 +58,10 @@ The required panel contains, at minimum:
 
 The historical opportunity set must be reconstructed point in time. Replacing it with a retrospective/current constituent set changes the scientific design and is specifically the subject of one of the paper's diagnostic analyses.
 
+### Pairs-classification input
+
+The frozen pairs implementation also uses a current-only ticker-to-sector classification map during formation-stage candidate generation. In the development repository this input was `config/asx_ticker_sector_map.csv`, derived from Yahoo Finance/yfinance classifications dated 2026-07-24 (with one manually verified classification). It is not Norgate market data and it is not used to construct the point-in-time investment universe, but it is a required input to reproduce the exact sector-first pairs candidate-generation path. The initial public package does not redistribute that classification table. A full pairs rerun must therefore supply an equivalent map with at least `ticker_code` and `sector` columns at `config/asx_ticker_sector_map.csv`, or use an explicitly supported equivalent path once the public execution wrapper is configured. Substituting different sector classifications can change candidate-pair generation and should be disclosed rather than treated as an innocuous path change.
+
 ## Script catalogue and intended use
 
 The public package contains two evidence-level wrapper scripts that do not require licensed market data, followed by the publication execution, diagnostic, freezing, and validation scripts used for a full empirical rerun. Scripts copied from the private development repository are reviewed for public-relative paths before release; their calculations are not changed during portability work.
