@@ -1,0 +1,25 @@
+{
+  "input_filename": "norgate_asx200_publication_raw.csv",
+  "row_count": 2462415,
+  "asset_count": 718,
+  "vendor_symbol_count": 718,
+  "start_date": "2000-03-31",
+  "end_date": "2026-08-27",
+  "member_row_count": 1332282,
+  "nonmember_row_count": 1130133,
+  "membership_values": [
+    0,
+    1
+  ],
+  "duplicate_asset_date_rows": 0,
+  "active_asset_count": 315,
+  "delisted_asset_count": 403,
+  "daily_return_null_count": 718,
+  "nonfirst_daily_return_null_count": 0,
+  "adj_close_close_mismatch_count": 0,
+  "dollar_volume_turnover_mismatch_count": 0,
+  "output_parquet_path": "data/processed/publication_market_ohlcv/exchange=ASX/asx200_point_in_time_panel.parquet",
+  "price_adjustment_convention": "Norgate TotalReturn default; adj_close = close",
+  "liquidity_convention": "dollar_volume = turnover",
+  "identity_convention": "asset_id"
+}
