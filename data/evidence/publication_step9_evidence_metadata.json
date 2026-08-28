@@ -1,0 +1,14 @@
+{
+  "artifact_count": 3,
+  "attribution_row_count": 12,
+  "comparison_rebuild_validation_status": "passed",
+  "comparison_strategy_count": 4,
+  "expected_evidence_strength_status": "passed",
+  "frozen_capstone_commit": "349fc00b087d404ba11bb9f04e9fe8ba7ad58ed6",
+  "manifest_hash_algorithm": "sha256",
+  "scope_note": "Freezes Step 9 corrected-vs-frozen comparison evidence only. It does not start Step 10 publication-worthiness assessment or alter the frozen capstone/Step 8 evidence.",
+  "status": "frozen",
+  "step": "9",
+  "step8_hash_validation_status": "passed",
+  "step_label": "corrected_vs_frozen_comparison"
+}
