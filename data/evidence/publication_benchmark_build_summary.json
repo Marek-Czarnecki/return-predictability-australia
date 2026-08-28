@@ -1,0 +1,26 @@
+{
+  "external_benchmark": {
+    "source_symbol": "$XJOA.au",
+    "source_asset_id": 203461,
+    "row_count": 6683,
+    "start_date": "2000-03-31",
+    "end_date": "2026-08-27",
+    "duplicate_trade_dates": 0,
+    "null_return_count": 1
+  },
+  "equal_weight_benchmark": {
+    "row_count": 6683,
+    "start_date": "2000-03-31",
+    "end_date": "2026-08-27",
+    "duplicate_trade_dates": 0,
+    "null_return_count": 1,
+    "member_count_min": 0,
+    "member_count_median": 200.0,
+    "member_count_max": 203,
+    "missing_member_return_count_max": 5,
+    "missing_member_return_fraction_mean": 0.0012545720998846613,
+    "missing_member_return_fraction_max": 0.025380710659898477
+  },
+  "membership_timing_convention": "member_of_universe observed on session t determines equal-weight holdings earning returns on the next observed market session",
+  "missing_return_convention": "no zero imputation; equal weights are renormalized across observable returns for expected members"
+}
