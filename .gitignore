@@ -27,3 +27,12 @@ env/
 !/figures/.gitkeep
 /tables/*
 !/tables/.gitkeep
+
+
+# Local Python environments
+.venv*/
+venv/
+env/
+
+# Local editor workspace files
+*.code-workspace
