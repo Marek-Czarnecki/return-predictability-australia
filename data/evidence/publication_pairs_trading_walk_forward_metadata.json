@@ -1,0 +1,27 @@
+{
+  "benchmark_missing_count": 0,
+  "benchmark_missing_policy": "exclude_from_objective_and_excess_metrics",
+  "benchmark_observed_count": 5926,
+  "benchmark_return_null_count": 0,
+  "borrow_financing": "excluded_disclosed_limitation",
+  "capital_normalization": "gross_exposure_normalized_by_1_plus_abs_hedge_ratio",
+  "daily_row_count": 5926,
+  "eligibility_col": "eligible_to_trade",
+  "evaluation_end": "2026-08-27T00:00:00",
+  "evaluation_start": "2003-03-31T00:00:00",
+  "excess_return_null_count": 0,
+  "fold_count": 24,
+  "formation_history_convention": "all_observable_prices_within_formation_window_for_formation_end_eligible_assets",
+  "identity_col": "asset_id",
+  "metric_semantics": {
+    "preferred_relative_metric": "net_excess_nav_difference",
+    "total_net_excess_return": "legacy_arithmetic_sum_of_daily_excess_returns"
+  },
+  "net_return_null_count": 0,
+  "pair_cost_application": "normalized_two_leg_weighted_tier_cost",
+  "parameter_selection_affected_by_risk_free": false,
+  "risk_free_path": "data/evidence/publication_risk_free.csv",
+  "risk_free_use": "summary_risk_adjusted_metrics_only",
+  "selected_pair_rows": 120,
+  "strategy_name": "pairs_trading"
+}
