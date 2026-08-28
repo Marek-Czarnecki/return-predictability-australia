@@ -1,0 +1,40 @@
+{
+  "structural_validation": {
+    "status": "passed",
+    "row_count": 6683,
+    "start_date": "2000-03-31",
+    "end_date": "2026-08-27",
+    "identical_external_and_equal_weight_dates": true,
+    "external_null_return_count": 1,
+    "equal_weight_null_return_count": 1
+  },
+  "equal_weight_missing_return_diagnostics": {
+    "member_count_median": 200.0,
+    "member_count_min": 0,
+    "member_count_max": 203,
+    "missing_member_return_count_max": 5,
+    "missing_member_return_fraction_mean": 0.001254572099884657,
+    "missing_member_return_fraction_max": 0.0253807106598984
+  },
+  "xew_validation_reference": {
+    "overlap_start_date": "2007-09-03",
+    "overlap_end_date": "2026-08-27",
+    "overlap_return_count": 4806,
+    "correlation": 0.995927347231294,
+    "mean_return_difference": 0.00018327267761252816,
+    "mean_absolute_return_difference": 0.0005927234971823086,
+    "root_mean_squared_return_difference": 0.0011212509295578984,
+    "max_absolute_return_difference": 0.013089661506658086
+  },
+  "xjo_price_index_reference": {
+    "overlap_start_date": "2000-04-03",
+    "overlap_end_date": "2026-08-27",
+    "overlap_return_count": 6682,
+    "correlation": 0.9987832042563631,
+    "mean_return_difference": 0.0001614672603488995,
+    "mean_absolute_return_difference": 0.00016767351306759123,
+    "root_mean_squared_return_difference": 0.0005104688157978119,
+    "max_absolute_return_difference": 0.0073555385262158
+  },
+  "interpretation_note": "$XEW is validation-only and exact equality is not expected because official index rebalancing/maintenance can differ from the reconstructed point-in-time equal-weight series. $XJO is price-index reference only; $XJOA remains the canonical total-return benchmark."
+}
