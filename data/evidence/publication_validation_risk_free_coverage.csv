@@ -1,0 +1,2 @@
+risk_free_path,risk_free_start,risk_free_end,publication_start,publication_end,coverage_status
+data/processed/publication_results/publication_risk_free.csv,2000-03-31,2026-08-27,2003-03-31,2026-08-27,complete
