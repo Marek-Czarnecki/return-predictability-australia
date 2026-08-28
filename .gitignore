@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# Jupyter / local tooling
+.ipynb_checkpoints/
+.DS_Store
+.vscode/
+.idea/
+
+# Licensed / non-redistributable market data
+/data/raw/
+/data/licensed/
+/data/processed/publication_market_ohlcv/
+**/*norgate*raw*
+**/asx200_point_in_time_panel.parquet
+
+# Local generated outputs
+/figures/*
+!/figures/.gitkeep
+/tables/*
+!/tables/.gitkeep
