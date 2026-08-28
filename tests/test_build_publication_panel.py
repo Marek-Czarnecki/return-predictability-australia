@@ -43,15 +43,10 @@ class BuildPublicationPanelTests(unittest.TestCase):
         self.validation_path = (
             Path(self.temp_dir.name) / "publication_results" / "publication_panel_validation.json"
         )
-        self.validation_path_patch = patch.object(
-            publication_builder, "VALIDATION_OUTPUT_PATH", self.validation_path
-        )
         self.baseline_patch.start()
         self.end_date_patch.start()
-        self.validation_path_patch.start()
 
     def tearDown(self) -> None:
-        self.validation_path_patch.stop()
         self.end_date_patch.stop()
         self.baseline_patch.stop()
         self.temp_dir.cleanup()
@@ -82,7 +77,11 @@ class BuildPublicationPanelTests(unittest.TestCase):
             input_path = temp_dir / "publication_raw.csv"
             output_path = temp_dir / "exchange=ASX" / "asx200_point_in_time_panel.parquet"
             raw.to_csv(input_path, index=False)
-            summary = build_publication_panel(input_path, output_path)
+            summary = build_publication_panel(
+                input_path,
+                output_path,
+                validation_output_path=self.validation_path,
+            )
             built = pd.read_parquet(output_path)
             validation = json.loads(self.validation_path.read_text())
         self.assertEqual(summary["output_path"], str(output_path))
@@ -133,7 +132,11 @@ class BuildPublicationPanelTests(unittest.TestCase):
             input_path = temp_dir / "publication_raw.csv"
             output_path = temp_dir / "private" / "custom_panel.parquet"
             raw.to_csv(input_path, index=False)
-            build_publication_panel(input_path, output_path)
+            build_publication_panel(
+                input_path,
+                output_path,
+                validation_output_path=self.validation_path,
+            )
             validation = json.loads(self.validation_path.read_text())
         self.assertEqual(validation["output_parquet_path"], "custom_panel.parquet")
 
