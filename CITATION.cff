@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the associated research article and this software repository."
+title: "Return Predictability in Australian Equities: Reproducibility Package"
+type: software
+authors:
+  - family-names: Czarnecki
+    given-names: Marek
+affiliation: "Walsh College"
+repository-code: "https://github.com/Marek-Czarnecki/return-predictability-australia"
+url: "https://github.com/Marek-Czarnecki/return-predictability-australia"
+abstract: "Public reproducibility package for a study of whether established return-predictability effects survive transfer to Australian equities under point-in-time, out-of-sample, multiplicity-controlled and implementation-aware evaluation."
+keywords:
+  - return predictability
+  - Australian equities
+  - point-in-time index membership
+  - survivorship bias
+  - out-of-sample testing
+  - multiple testing
