@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "check_count": 26,
+  "failed_check_count": 0,
+  "failed_checks": [],
+  "metric_semantics": {
+    "legacy_total_net_excess_return": "arithmetic_sum_of_daily_excess_returns",
+    "preferred_relative_metric": "net_excess_nav_difference"
+  },
+  "risk_free_coverage_status": "complete"
+}
