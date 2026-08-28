@@ -1,0 +1,13 @@
+{
+  "alternative": "greater",
+  "multiple_testing_family": "confirmatory_primary_family",
+  "multiple_testing_method": "holm",
+  "primary_hypothesis_count": 4,
+  "reject_count_after_holm_0_05": 0,
+  "status": "complete",
+  "tax_loss_primary_metric": "abnormal_net_return_difference",
+  "tax_loss_raw_return_difference_role": "secondary_descriptive",
+  "tax_loss_sample_unit": "calendar_years_equal_weight",
+  "walk_forward_primary_metric": "net_excess_nav_difference",
+  "walk_forward_sample_unit": "evaluation_folds"
+}
