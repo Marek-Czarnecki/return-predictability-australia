@@ -1,0 +1,22 @@
+{
+  "benchmark_missing_count": 0,
+  "benchmark_missing_policy": "exclude_from_objective_and_excess_metrics",
+  "benchmark_observed_count": 5926,
+  "benchmark_return_null_count": 0,
+  "daily_row_count": 5926,
+  "eligibility_col": "eligible_to_trade",
+  "evaluation_end": "2026-08-27T00:00:00",
+  "evaluation_start": "2003-03-31T00:00:00",
+  "excess_return_null_count": 0,
+  "fold_count": 24,
+  "identity_col": "asset_id",
+  "metric_semantics": {
+    "preferred_relative_metric": "net_excess_nav_difference",
+    "total_net_excess_return": "legacy_arithmetic_sum_of_daily_excess_returns"
+  },
+  "net_return_null_count": 0,
+  "parameter_selection_affected_by_risk_free": false,
+  "risk_free_path": "data/evidence/publication_risk_free.csv",
+  "risk_free_use": "summary_risk_adjusted_metrics_only",
+  "strategy_name": "trend_following"
+}
