@@ -1,0 +1,27 @@
+check,status,detail
+trend_following_fold_count,passed,observed=24 expected=24
+trend_following_summary_fold_count,passed,observed=24 expected=24
+trend_following_daily_row_count,passed,observed=5926 expected=5926
+trend_following_daily_null_returns,passed,"net_return, benchmark_return and excess_return must be complete"
+trend_following_benchmark_observed,passed,observed=5926/5926
+trend_following_legacy_excess_metric_identified,passed,"Existing total_net_excess_return is confirmed to be the arithmetic sum of daily excess returns, not a compounded relative return."
+trend_following_metric_audit_fold_count,passed,observed=24 expected=24
+mean_reversion_fold_count,passed,observed=24 expected=24
+mean_reversion_summary_fold_count,passed,observed=24 expected=24
+mean_reversion_daily_row_count,passed,observed=5926 expected=5926
+mean_reversion_daily_null_returns,passed,"net_return, benchmark_return and excess_return must be complete"
+mean_reversion_benchmark_observed,passed,observed=5926/5926
+mean_reversion_legacy_excess_metric_identified,passed,"Existing total_net_excess_return is confirmed to be the arithmetic sum of daily excess returns, not a compounded relative return."
+mean_reversion_metric_audit_fold_count,passed,observed=24 expected=24
+pairs_trading_fold_count,passed,observed=24 expected=24
+pairs_trading_summary_fold_count,passed,observed=24 expected=24
+pairs_trading_daily_row_count,passed,observed=5926 expected=5926
+pairs_trading_daily_null_returns,passed,"net_return, benchmark_return and excess_return must be complete"
+pairs_trading_benchmark_observed,passed,observed=5926/5926
+pairs_trading_legacy_excess_metric_identified,passed,"Existing total_net_excess_return is confirmed to be the arithmetic sum of daily excess returns, not a compounded relative return."
+pairs_trading_metric_audit_fold_count,passed,observed=24 expected=24
+tax_loss_event_count,passed,events=517 summary=517
+tax_loss_complete_matched_count,passed,complete=467 summary=467
+tax_loss_year_count,passed,summary_years=26
+tax_loss_year_robustness_structure,passed,"year summary, leave-one-year-out and clustered rows must reconcile"
+risk_free_full_publication_coverage,passed,risk_free=2000-03-31 00:00:00..2026-08-27 00:00:00; publication=2003-03-31 00:00:00..2026-08-27 00:00:00
