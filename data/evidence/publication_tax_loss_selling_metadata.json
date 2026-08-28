@@ -1,0 +1,13 @@
+{
+  "benchmark": "XJOA_total_return_index",
+  "complete_matched_observation_count": 467,
+  "cost_application": "symmetric_round_trip_cost_event_and_control",
+  "event_observation_count": 517,
+  "history_policy": "all_observable_asset_id_history_for_252_observation_trailing_return",
+  "identity_col": "asset_id",
+  "liquidity_diagnostic_rows": 5178,
+  "membership_selection_policy": "point_in_time_member_on_selection_date",
+  "missing_window_policy": "require_complete_security_and_benchmark_windows",
+  "strategy_name": "tax_loss_selling",
+  "year_count": 26
+}
