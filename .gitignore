@@ -19,7 +19,10 @@ env/
 **/*norgate*raw*
 **/asx200_point_in_time_panel.parquet
 
-# Local generated outputs
+# Local full-rerun outputs
+/data/generated/
+
+# Local generated manuscript outputs
 /figures/*
 !/figures/.gitkeep
 /tables/*
