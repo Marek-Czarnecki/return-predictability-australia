@@ -1,37 +1,45 @@
-# Do return-predictability effects survive transfer? Evidence from Australian equities
+# Historical universe contamination in an adaptive trend-following backtest
 
-This repository is the public reproducibility companion for an empirical finance study examining whether four established return-predictability mechanisms—trend following, mean reversion, pairs trading, and tax-loss selling—survive transfer to Australian equities under a common point-in-time, out-of-sample, implementation-aware, and multiplicity-controlled research design.
+This repository is the public reproducibility companion for the empirical study **Historical universe contamination in an adaptive trend-following backtest: Evidence from Australian equities**.
 
-## Research design
+## Principal contribution
 
-The publication analysis uses historical point-in-time ASX 200 membership, walk-forward out-of-sample evaluation, ex-ante transaction-cost assumptions, dependence-aware inference, and Holm family-wise multiplicity control across four pre-defined confirmatory tests.
+The article's main contribution is a controlled same-vendor experiment that compares genuine point-in-time ASX 200 membership with a retrospectively applied later constituent universe in the same seven-fold adaptive trend-following design.
 
-The principal confirmatory result is that none of the four pre-defined effects receives support after Holm adjustment under the publication-standard design. A separate diagnostic analysis shows that retrospective-current constituent membership is the major directly demonstrated contributor to the change in the earlier trend-following result. Diagnostic ablations are not part of the confirmatory Holm family and are not interpreted as an additive causal decomposition.
+Retrospective universe construction raises mean benchmark-relative terminal NAV performance by **0.15305** (about **15.3 percentage points**) per evaluation fold. An exact symmetric two-factor decomposition attributes **0.15170** (about **15.17 points**) to the direct universe/composition channel and **0.00135** (about **0.14 points**) to endogenous parameter reselection, even though selected parameters change in five of seven folds. The universe component is positive in all seven matched folds. Cross-sectional concentration diagnostics indicate that the composition effect is broad rather than driven by a small number of extreme survivors.
 
-## Repository purpose
+The novelty claim is deliberately bounded. The experiment isolates the constituent-membership mechanism within common Norgate security coverage. It does **not** claim that survivorship bias is newly discovered, that historical-universe bias has never affected Australian momentum research, or that the controlled Norgate experiment fully explains the earlier Yahoo-based capstone result.
 
-This repository is deliberately narrower than the private development workspace. It is intended to provide:
+## Supporting confirmatory study
 
-- frozen aggregate evidence supporting the manuscript;
-- code implementing the publication research design;
-- tests for publication-specific scientific invariants;
-- scripts to reproduce manuscript tables and figures from redistributable evidence; and
-- documentation of the boundary created by licensed source data.
+The broader publication design evaluates four pre-defined return-predictability mechanisms - trend following, mean reversion, pairs trading, and tax-loss selling - using historical point-in-time ASX 200 membership, walk-forward out-of-sample evaluation, ex-ante transaction-cost assumptions, dependence-aware inference, and Holm family-wise multiplicity control.
 
-## Data availability
+None of the four pre-defined mechanisms receives Holm-adjusted confirmatory support under the publication-standard design. This is important supporting context, but it is not the headline identity of the article.
 
-The underlying security-level market and historical constituent data are licensed from Norgate Data and cannot be redistributed here. The repository therefore does not contain the raw Norgate extraction, the point-in-time ASX 200 panel, or other row-level licensed datasets that could substitute for access to the licensed source.
+## Reproducibility scope
 
-Publicly redistributable aggregate evidence and validation artifacts are provided where they are sufficient to reproduce the reported manuscript tables, figures, and inferential conclusions. See `DATA_AVAILABILITY.md` and `REPRODUCIBILITY.md` for the precise boundary.
+This repository is deliberately narrower than the private analytical development workspace. It provides:
+
+- redistributable aggregate evidence for the seven-fold A/B/C/D mechanism experiment;
+- aggregate concentration statistics supporting the cross-sectional claim;
+- frozen aggregate evidence for the four-test confirmatory family;
+- verification code for the manuscript's principal scientific invariants;
+- scripts that reproduce reviewer-facing tables and figures from public evidence; and
+- documentation of the boundary created by licensed Norgate Data.
+
+The underlying security-level market and historical constituent data are licensed from Norgate Data and are not redistributed here. Security-level contribution files used for the concentration diagnosis are also withheld pending explicit redistribution/licensing clearance.
+
+See `DATA_AVAILABILITY.md`, `REPRODUCIBILITY.md`, and `docs/PUBLICATION_EVIDENCE.md` for the precise evidence boundary and reproduction paths.
 
 ## Evidence provenance
 
-The empirical manuscript evidence was frozen in the private development repository at commit:
+Two frozen analytical states are relevant:
 
-`c835cd89e45a46b0b82356ef6b6d40334971da39`
+- confirmatory publication evidence and the earlier diagnostic attribution package: private development commit `c835cd89e45a46b0b82356ef6b6d40334971da39`;
+- the post-rejection mechanism decomposition and concentration analysis supporting the revised manuscript contribution: private `publication-extension` commit `7b4bec52bcdf94691b2206c2049cfa6d69ba526e`.
 
-Files transferred into this repository are drawn from that frozen state unless explicitly documented as public-only reproducibility material.
+Public-only portability, documentation, and aggregate-reproduction files may be newer; they do not alter the frozen empirical results.
 
 ## Status
 
-The repository is being assembled as the publication-facing reproducibility package. The manuscript itself is not included in the initial repository package.
+This repository is the publication-facing reproducibility package. The manuscript itself is maintained separately and is not distributed here.
