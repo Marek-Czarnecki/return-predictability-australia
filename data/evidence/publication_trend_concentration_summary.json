@@ -1,0 +1,19 @@
+{
+  "analysis_role": "post_rejection_diagnostic_originality_analysis",
+  "confirmatory": false,
+  "fold_count": 7,
+  "asset_count": 718,
+  "mean_total_universe_treatment_effect_nav_difference": 0.15305148515250488,
+  "mean_shapley_universe_component_nav_difference": 0.15170128640783137,
+  "mean_shapley_parameter_selection_component_nav_difference": 0.0013501987446734587,
+  "parameter_selection_changed_fold_count": 5,
+  "top_1_absolute_share": 0.0437085158220576,
+  "top_5_absolute_share": 0.15302333182940622,
+  "top_10_absolute_share": 0.24558295546218692,
+  "asset_count_to_50pct_absolute_share": 28,
+  "asset_count_to_80pct_absolute_share": 81,
+  "absolute_contribution_hhi": 0.012697823907628782,
+  "nav_decomposition_note": "The two-factor Shapley decomposition is exact for each fold's compounded terminal benchmark-relative NAV difference. Universe and parameter-selection components sum to the observed retrospective-minus-PIT fold effect.",
+  "concentration_note": "Aggregate concentration statistics are calculated from security-level contributions that reconcile exactly to the arithmetic daily net-return stream, not to compounded terminal NAV. Security-level rows are intentionally not redistributed.",
+  "licensing_note": "Raw licensed Norgate data and security-level derived contribution files are excluded from the public package."
+}
